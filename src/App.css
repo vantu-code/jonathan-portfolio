@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
 .App {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .App-logo {
@@ -52,11 +56,18 @@ body{
   justify-content: space-around;
   width: 70%;
   margin: auto; 
-  margin-top: 15%;
+  margin-top: 10%;
+  background-color: rgb(59, 59, 59);
+  border: 2px double rgba(32, 32, 32, 0.233);
+  border-radius: 4px;
+  box-shadow: 5px 5px 50px 5px rgb(34, 34, 34);
+  text-decoration: none;
+  color: black;
 }
   
 h3 {
   text-align: center; }
+
 
 .each-slide > div {
   display: flex;
@@ -64,6 +75,11 @@ h3 {
   justify-content: center;
   background-size: cover;
   height: 300px;
+  
+}
+.each-slide a {
+text-decoration: none;
+color: rgb(151, 162, 168);
 }
 
 .each-slide span {
@@ -71,9 +87,11 @@ h3 {
   font-size: 20px;
   background: #efefef;
   text-align: center;
+  
 }
 
 .each-fade {
+  
   display: flex;
 }
 
@@ -103,15 +121,7 @@ h3 {
   text-align: center;
 margin-top: 5%;
 }
-.nav-bar{
-  background-color: black;
-  color: rgb(253, 247, 238);
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+
 .nav-list{
   display: flex;
   text-decoration: none;
@@ -121,6 +131,59 @@ margin-top: 5%;
 .nav-list li{
 margin: 0 10px;
 }
+.nav-list li a{
+  text-decoration: none;
+  color: rgb(253, 247, 238);
+}
 .name{
   margin-left: 4%;
+}
+.my-pic{
+  display: inline;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  float: left;
+  margin: 50px;
+}
+.about-text{
+  margin-top: 5%;
+  margin-right: 5%;
+}
+.nav-bar{
+  background-color: rgb(51, 51, 51);
+  color: rgb(253, 247, 238);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* z-index: 99; */
+}
+.footer{
+  background-color: rgb(51, 51, 51);
+  color: rgb(253, 247, 238);
+  display: flex;
+  justify-content: space-between;
+
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  line-height: 35px
+}
+.footer-list{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0 auto;
+}
+.footer-list li a{
+  text-decoration: none;
+  color: rgb(253, 247, 238);
+  margin: 10px 10px;
+}
+.linkedin-f{
+  margin-top: 9px;
 }
