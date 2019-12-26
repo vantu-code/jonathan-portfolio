@@ -1,0 +1,58 @@
+[
+    {
+    "title": "Musical Scales",
+    "photo": "/images/musical-scales.png",
+    "description": "Train your musical scales knowledge and get points by finding the notes that are in the chosen scale and bonus for full scale (all minor and major scales)",
+    "programs": ["JavaScript", "canvas","ES6", "HTML", "css"],
+    "features": [
+        "Adjust speed of movement",
+        "Adjust speed of notes",
+        "Shoot",
+        "Check which notes are in the current scale",
+        "Check which notes were collected",
+        "Check average score per scale of prior games and times played"
+        ],
+    "deploy": "https://vantu-code.github.io/musical-scales/",
+    "repository": ["https://github.com/vantu-code/musical-scales"],
+    "devices": ["desktop"]
+    },
+    {
+    "title": "One News",
+    "description": "Get news from different sources relevent to your search query",
+    "programs": ["JavaScript","ES6", "axios", "express", "NodeJs", "HanldeBars", "Bootstrap", "REST API"],
+    "features": [
+        "Read articles",
+        "Favorite articles",
+        "Delete favorite",
+        "Storing user queries and generating auto results",
+        "Edit profile",
+        "Clear query history",
+        "Admin Panel - Analyze data of most used queries, users and all favorites"
+        ],
+    "deploy": "https://o-news.herokuapp.com/",
+    "repository": ["https://github.com/vantu-code/world-news"],
+    "devices": ["desktop", "mobile"]
+    },
+    {
+    "title": "Catch Me There",
+    "description": "Social event media, to create anf join custom 'hangouts' or related to existing concerts happening in my city",
+    "programs": ["JavaScript","ES6", "axios", "express", "NodeJs", "ReactJS", "Styled components", "multiple REST API"],
+    "features": [
+        "Find concerts by city",
+        "Find concerts by your current location",
+        "Listen to top songs of the artist",
+        "Location of hangout and concert in map",
+        "Create custom hangout",
+        "Create hangout related to concert",
+        "photo upload to profile or hangout",
+        "limit people to group",
+        "Join hangout",
+        "Link to buy tickets",
+        "See who joined and organized the hangout and see their profiles"
+        ],
+    "deploy": "https://catch-me-there.herokuapp.com/",
+    "repository": ["https://github.com/vantu-code/catch-me-there-front", "https://github.com/vantu-code/catch-me-there-back"],
+    "devices": ["desktop", "mobile"]
+    }
+    
+    ]

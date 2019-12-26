@@ -17,11 +17,12 @@ export default class About extends Component {
 
                 <div className="about-flex">
                 <div className="my-text">
-                <button className="button-about"><h1 onClick={this.showAbout} >About</h1></button>
+                <button className="button-about"><h1  >About</h1></button>
                 <img className="my-pic" src="/images/IRONHACK_RETRATOS_GRUPOS0105.jpg"/>
-                <h4>I am a full Stack Developer</h4> <p>my programming knowledge so far is 
+                <h4>I am a full Stack Developer</h4> <p>My programming knowledge so far is 
                 <span style={{fontWeight:"bold"}}> Javascript, ES6, MongoDB, Express, React, Node-js, HTML & CSS. </span>
-                I am fascinated by inovations, creativity and combining both.
+                I am fascinated by inovations, creativity and combining both. 
+                {/* <a href="#about" onClick={this.showAbout}> read more</a> */}
                 </p>
                 <span style={{fontWeight:"bold"}}>Experience in marketing and management </span>
                 <p>
