@@ -4,7 +4,7 @@ import projects from '../projects.json'
 export default class ProjectDetails extends Component {
     render() {
         const {project} = this.props;
-        console.log(project)
+        // console.log(project)
         return (
             project?
             <div className="slide-details">
