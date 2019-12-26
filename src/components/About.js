@@ -1,13 +1,53 @@
 import React, { Component } from 'react'
 
 export default class About extends Component {
+    state={
+        showAbout: true
+    }
+    showAbout=()=>{
+    const showAbout = this.state.showAbout
+    this.setState({showAbout: !showAbout})
+    }
     render() {
+        const {quote} = this.props
+        const {showAbout} = this.state 
         return (
             <div id="about">
-                <img className="my-pic" src="/images/IRONHACK_RETRATOS_GRUPOS0105.jpg"/>
                 <div className="about-text">
-                <h1>About</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla malesuada risus at nibh varius condimentum. Maecenas suscipit, felis ac blandit auctor, diam nisl molestie orci, vitae convallis lacus urna id magna. Aenean varius ex et pellentesque sagittis. Pellentesque porttitor ante vel laoreet dapibus. Quisque venenatis aliquet augue, sit amet venenatis risus convallis nec. Integer nibh risus, suscipit ac sapien non, eleifend ultrices dui. Morbi in erat orci. Etiam tellus nibh, vulputate non erat a, finibus rhoncus urna. Curabitur condimentum sed ex malesuada vehicula.</p>
+
+                <div className="about-flex">
+                <div className="my-text">
+                <button className="button-about"><h1 onClick={this.showAbout} >About</h1></button>
+                <img className="my-pic" src="/images/IRONHACK_RETRATOS_GRUPOS0105.jpg"/>
+                <h4>I am a full Stack Developer</h4> <p>my programming knowledge so far is 
+                <span style={{fontWeight:"bold"}}> Javascript, ES6, MongoDB, Express, React, Node-js, HTML & CSS. </span>
+                I am fascinated by inovations, creativity and combining both.
+                </p>
+                <span style={{fontWeight:"bold"}}>Experience in marketing and management </span>
+                <p>
+                I have experience in marketing strategy and team leader for Google ads project. 
+                working with Google ads, Google analytics, Google tag manager, Google spreadsheet, salesForce and more.
+                </p>
+                <p>
+                My goal is to always learn and explore more and let my curiosity lead me forward.
+                In my free time I enjoy the nature, I love to kitesurf, snowboard, produce music and explore new interests.
+                </p>
+                <p>
+                I would love to hear from you, feel free to contact me. 
+                </p>
+                <p>
+                Jonathan
+                </p>
+                </div>
+                {
+                quote?
+                <div className="quote2">
+                <h4>"{quote.quote}" <p>-{quote.author}</p></h4>
+                <button className="button-quote" onClick={this.props.getqoute}>Get a new quote</button>
+                </div>
+                :null
+                }
+                </div>
                 </div>
             </div>
         )

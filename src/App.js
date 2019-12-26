@@ -5,21 +5,43 @@ import NavBar from './components/NavBar'
 import About from './components/About'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
+import quotes from './quotes.json'
 
 // import React, { Component } from 'react'
 
 export default class App extends Component {
+  state={
+    quoteNumber: null,
+  }
+  getqoute=()=>{
+    const quoteNumber = Math.floor(Math.random()*quotes.length)
+    this.setState({quoteNumber})
+  }
+  componentDidMount(){
+    this.getqoute()
+  }
+
   render() {
+    const quote = quotes[this.state.quoteNumber]
+    console.log(this.state.quoteNumber)
     return (
       <div className="all-page">
-      <NavBar/>      
+      <NavBar/>
       <div className="title">
-      {/* <h1>Welcome to my portfolio!</h1> */}
-      </div>
+       {/* <h1>Welcome to my portfolio!</h1> */}
+       </div>
       <Projects/>
       <div className="hero"></div>
-      <About/>
-      <Footer/>
+      {/* {
+      quote?
+      <div className="quote">
+      <h4>"{quote.quote}" -{quote.author}</h4>
+      <button className="button-quote" onClick={this.getqoute}>Get a new quote</button>
+      </div>
+      :null
+      } */}
+      <About getqoute={this.getqoute} quote={quote}/>
+      <Footer quote={quote}/>
       </div>
     )
   }
