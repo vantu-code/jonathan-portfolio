@@ -1,5 +1,27 @@
 [
     {
+        "title": "Catch Me There",
+        "photo": "/images/catch-me-there.png",
+        "description": "Social event app, to create and join custom 'hangouts' or related to existing concerts happening in my city",
+        "programs": ["JavaScript","ES6", "axios", "express", "NodeJs", "ReactJS", "Styled components", "multiple REST API", "MongoDB"],
+        "features": [
+            "Find concerts by city",
+            "Find concerts by your current location",
+            "Listen to top songs of the artist",
+            "Location of hangout and concert in map",
+            "Create custom hangout",
+            "Create hangout related to concert",
+            "photo upload to profile or hangout",
+            "limit people to group",
+            "Join hangout",
+            "Link to buy tickets",
+            "See who joined and organized the hangout and see their profiles"
+            ],
+        "deploy": "https://catch-me-there.herokuapp.com/",
+        "repository": ["https://github.com/vantu-code/catch-me-there-front", "https://github.com/vantu-code/catch-me-there-back"],
+        "devices": ["desktop", "mobile"]
+        },
+    {
     "title": "Musical Scales",
     "photo": "/images/musical-scales.png",
     "description": "Train your musical scales knowledge and get points by finding the notes that are in the chosen scale and bonus for full scale (all minor and major scales)",
@@ -18,8 +40,9 @@
     },
     {
     "title": "One News",
+    "photo": "/images/one-news.png",
     "description": "Get news from different sources relevent to your search query",
-    "programs": ["JavaScript","ES6", "axios", "express", "NodeJs", "HanldeBars", "Bootstrap", "REST API"],
+    "programs": ["JavaScript","ES6", "axios", "express", "NodeJs", "HanldeBars", "Bootstrap", "REST API", "MongoDB"],
     "features": [
         "Read articles",
         "Favorite articles",
@@ -32,27 +55,7 @@
     "deploy": "https://o-news.herokuapp.com/",
     "repository": ["https://github.com/vantu-code/world-news"],
     "devices": ["desktop", "mobile"]
-    },
-    {
-    "title": "Catch Me There",
-    "description": "Social event app, to create and join custom 'hangouts' or related to existing concerts happening in my city",
-    "programs": ["JavaScript","ES6", "axios", "express", "NodeJs", "ReactJS", "Styled components", "multiple REST API"],
-    "features": [
-        "Find concerts by city",
-        "Find concerts by your current location",
-        "Listen to top songs of the artist",
-        "Location of hangout and concert in map",
-        "Create custom hangout",
-        "Create hangout related to concert",
-        "photo upload to profile or hangout",
-        "limit people to group",
-        "Join hangout",
-        "Link to buy tickets",
-        "See who joined and organized the hangout and see their profiles"
-        ],
-    "deploy": "https://catch-me-there.herokuapp.com/",
-    "repository": ["https://github.com/vantu-code/catch-me-there-front", "https://github.com/vantu-code/catch-me-there-back"],
-    "devices": ["desktop", "mobile"]
     }
+
     
     ]

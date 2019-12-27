@@ -7,6 +7,8 @@ import Projects from './components/Projects'
 import Footer from './components/Footer'
 import quotes from './quotes.json'
 
+
+
 // import React, { Component } from 'react'
 
 export default class App extends Component {
@@ -27,8 +29,8 @@ export default class App extends Component {
     return (
       <div className="all-page">
       <NavBar/>
-      <div className="title">
-       {/* <h1>Welcome to my portfolio!</h1> */}
+      <div className="title" id="projects">
+       <h1>Projects</h1>
        </div>
       <Projects/>
       <div className="hero"></div>

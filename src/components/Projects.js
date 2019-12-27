@@ -4,15 +4,16 @@ import projects from '../projects.json'
 import ProjectDetails from './ProjectDetails'
 
 
+
 const properties = {
-  duration: 10000,
+duration: 10000,
 //   transitionDuration: 1000,
-  infinite: true,
-  indicators: true,
-  arrows: true,
-  onChange: (oldIndex, newIndex) => {
+infinite: true,
+indicators: true,
+arrows: true,
+onChange: (oldIndex, newIndex) => {
     // console.log(`slide transition from ${oldIndex} to ${newIndex}`);
-  }
+}
 }
 
 export default class Slideshow extends Component {
@@ -52,10 +53,10 @@ export default class Slideshow extends Component {
           // console.log(`slide transition from ${oldIndex} to ${newIndex}`);
         }
         }
-  render() 
+render() 
     {
     return (
-    <div className="slide-container" id="projects">
+    <div className="slide-container" >
         <Slide {...this.properties}>
 
             <div id={`${this.state.idForSlide}`} className="each-slide"  onMouseEnter={this.show1} onMouseLeave={this.dontShow} >
@@ -64,11 +65,10 @@ export default class Slideshow extends Component {
 
                 <div className="my-slide">
                     {/* desktop */}
-                    <h2 id="desktop-slide">Musical Scales</h2>
+                    <h2 id="desktop-slide">{projects[0].title}</h2>
                     <img id="desktop-slide" className="image-slide" src={projects[0].photo} onClick={this.show1}/>
-                    <h4 id="desktop-slide" onClick={this.show1} > More details</h4>
                     {/* mobile */}
-                    <h2 id="mobile-slide" >Musical Scales</h2>
+                    <h2 id="mobile-slide" >{projects[0].title}</h2>
                     <img id="mobile-slide" className="image-slide" src={projects[0].photo} onClick={this.show1}/>
                     <h4 id="mobile-slide" onClick={this.show1} > More details</h4>
                 </div>
@@ -83,12 +83,11 @@ export default class Slideshow extends Component {
 
                 <div className="my-slide">
                     {/* desktop */}
-                    <h2 id="desktop-slide">One News</h2>
-                    <img id="desktop-slide" className="image-slide" src={projects[0].photo} onClick={this.show2}/>
-                    <h4 id="desktop-slide" onClick={this.show2} > More details</h4>
+                    <h2 id="desktop-slide">{projects[1].title}</h2>
+                    <img id="desktop-slide" className="image-slide" src={projects[1].photo} onClick={this.show2}/>
                     {/* mobile */}
-                    <h2 id="mobile-slide" >One News</h2>
-                    <img id="mobile-slide" className="image-slide" src={projects[0].photo} onClick={this.show2}/>
+                    <h2 id="mobile-slide" >{projects[1].title}</h2>
+                    <img id="mobile-slide" className="image-slide" src={projects[1].photo} onClick={this.show2}/>
                     <h4 id="mobile-slide" onClick={this.show2}  > More details</h4>
                 </div>
                 :
@@ -102,12 +101,11 @@ export default class Slideshow extends Component {
 
                 <div className="my-slide">
                     {/* desktop */}
-                    <h2 id="desktop-slide">Catch Me There</h2>
-                    <img id="desktop-slide" className="image-slide" src={projects[0].photo} onClick={this.show3}/>
-                    <h4 id="desktop-slide" onClick={this.show3} > More details</h4>
+                    <h2 id="desktop-slide">{projects[2].title}</h2>
+                    <img id="desktop-slide" className="image-slide" src={projects[2].photo} onClick={this.show3}/>
                     {/* mobile */}
-                    <h2 id="mobile-slide" >One News</h2>
-                    <img id="mobile-slide" className="image-slide" src={projects[0].photo} onClick={this.show3}/>
+                    <h2 id="mobile-slide" >{projects[2].title}</h2>
+                    <img id="mobile-slide" className="image-slide" src={projects[2].photo} onClick={this.show3}/>
                     <h4 id="mobile-slide" onClick={this.show3}  > More details</h4>
                 </div>
                 :
