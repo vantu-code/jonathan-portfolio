@@ -324,7 +324,49 @@ padding-left: 0;
   height: 450px; 
   margin-bottom: 0;
 }
+.app-button{
+  border: 1px solid rgba(69, 97, 138, 0.678);
+  padding: 0 7px;
+  border-radius: 4px;
+}
+.app-button:hover{
+  border: 1px solid rgb(70, 81, 131);
+  background-color: rgba(76, 111, 175, 0.877);
+  padding: 0 7px;
+  border-radius: 4px;
+  transform: rotate(8deg);
+}
+.my-slide h4{
+  display: none;
+}
+#mobile-slide{
+  display: none;
+}
+#desktop-slide{
+  display: block;
+}
 @media screen and (max-width: 800px) {
+  #desktop-slide{
+    display: none;
+  }
+  #mobile-slide{
+    display: inline-block;
+  }
+  .button-quote{
+    margin-bottom: 20px;
+  }
+  .nav-bar{
+    z-index: 1;
+  }
+  .app-button{
+    display: inline-block;
+    width: 40px;
+  }
+  .slide-container{
+    margin-top: 180px;
+    margin-bottom: 180px;
+    width: 90%;
+  }
   #short{
     display: block;
     height: 350px; 
@@ -378,7 +420,20 @@ padding-left: 0;
     height: 20px;
   }
   .my-slide h2{
-  margin-top: 80px;
+
+  margin-top: 20px;
+  }
+  .my-slide h4{
+    display: inline-block;
+  text-decoration: none;
+color: rgb(151, 162, 168);
+border: 0.5px solid rgba(124, 124, 124, 0.637);
+border-radius: 4px;
+padding: 5px;
+  }
+  .my-slide h4:hover{
+    background-color: rgb(151, 162, 168);
+    color: black;
   }
   .description{
     margin-top: 30px;

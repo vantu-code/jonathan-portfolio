@@ -16,8 +16,8 @@ export default class ProjectDetails extends Component {
             {
             <ul>
             {
-                project.features.map((feature)=>{
-                return <li>{feature}</li>
+                project.features.map((feature, i)=>{
+                return <li key={i}>{feature}</li>
                 })
             }
             </ul>
@@ -28,8 +28,8 @@ export default class ProjectDetails extends Component {
             {
             <ul>
             {
-                project.programs.map((program)=>{
-                return <li>{program}</li>
+                project.programs.map((program, i)=>{
+                return <li key={i}>{program}</li>
                 })
             }
             </ul>
@@ -40,8 +40,8 @@ export default class ProjectDetails extends Component {
             {
             <ul>
             {
-                project.devices.map((device)=>{
-                return <li>{device}</li>
+                project.devices.map((device, i)=>{
+                return <li key={i}>{device}</li>
                 })
             }
             </ul>
@@ -49,7 +49,7 @@ export default class ProjectDetails extends Component {
 </div>
 </div>
     <div className="links">
-            <div><a href={project.deploy}> App </a></div>
+            <div className="app-button"><a href={project.deploy}> App </a></div>
             <div><a href={project.repository[0]}> Repository </a></div>
             {
             project.repository[1]?

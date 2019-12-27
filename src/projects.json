@@ -35,7 +35,7 @@
     },
     {
     "title": "Catch Me There",
-    "description": "Social event media, to create anf join custom 'hangouts' or related to existing concerts happening in my city",
+    "description": "Social event app, to create and join custom 'hangouts' or related to existing concerts happening in my city",
     "programs": ["JavaScript","ES6", "axios", "express", "NodeJs", "ReactJS", "Styled components", "multiple REST API"],
     "features": [
         "Find concerts by city",
