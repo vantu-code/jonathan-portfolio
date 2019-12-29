@@ -9,18 +9,18 @@ export default class ProjectDetails extends Component {
             project?
             <div className="slide-details">
 
-            <h3 className="description" onClick={this.props.dontShow}>{project.description} </h3>
+            <h3 className="description" onClick={this.props.dontShow}><h3 style={{textAlign:"left"}}>{project.title}</h3>{project.description} </h3>
 <div className="horizontal-flex" onClick={this.props.dontShow}>
 <div className="features" >
             <h2>Features:</h2>
             {
-            <ul>
-            {
-                project.features.map((feature, i)=>{
-                return <li key={i}>{feature}</li>
-                })
-            }
-            </ul>
+                <ul>
+                {
+                    project.features.map((feature, i)=>{
+                    return <li key={i}>{feature}</li>
+                    })
+                }
+                </ul>
             }
 </div>
 <div className="using">

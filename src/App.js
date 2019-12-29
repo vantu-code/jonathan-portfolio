@@ -30,9 +30,9 @@ export default class App extends Component {
       <div className="all-page">
       <NavBar/>
       <div className="title" id="projects">
-       <h1>Projects</h1>
+       {/* <h1>Projects</h1> */}
        </div>
-      <Projects/>
+      <Projects />
       <div className="hero"></div>
       <About getqoute={this.getqoute} quote={quote}/>
       <Footer quote={quote}/>

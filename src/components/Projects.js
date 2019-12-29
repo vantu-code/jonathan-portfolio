@@ -56,7 +56,7 @@ export default class Slideshow extends Component {
 render() 
     {
     return (
-    <div className="slide-container" >
+    <div className="slide-container" id="projects">
         <Slide {...this.properties}>
 
             <div id={`${this.state.idForSlide}`} className="each-slide"  onMouseEnter={this.show1} onMouseLeave={this.dontShow} >
