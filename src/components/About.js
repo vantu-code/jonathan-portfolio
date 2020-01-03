@@ -49,7 +49,6 @@ export default class About extends Component {
                 {
                 quote?
                 <div className="quote2">
-                <img className="my-pic-desktop" src="./images/IRONHACK_RETRATOS_GRUPOS0105.jpg"/>
                 <h4>"{quote.quote}" <p>-{quote.author}</p></h4>
                 <button className="button-quote" onClick={this.props.getqoute}>Get a new quote</button>
                 </div>

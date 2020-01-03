@@ -160,9 +160,7 @@ margin: 0 14px;
 }
 .nav-list li:hover{
 
-transform:matrix(1.10,0.11,-0.01,1.12,0,0);
--ms-transform:matrix(1.10,0.11,-0.01,1.12,0,0);
--webkit-transform:matrix(1.10,0.11,-0.01,1.12,0,0);
+transform: scale(1.2)
 }
 .nav-list li a{
   text-decoration: none;
@@ -170,35 +168,26 @@ transform:matrix(1.10,0.11,-0.01,1.12,0,0);
   margin: 0 14px;
 }
 .nav-list li a:hover{
-  color: rgb(217, 232, 236);
+  color: rgb(190, 201, 204);
 }
 .name{
   margin-left: 4%;
 }
 .my-pic{
   /* display: none; */
-  width: 90px;
-  height: 90px;
+  width: 50px;
+  height: 50px;
   object-fit: cover;
   object-position: top;
   border-radius: 50%;
-}
-.my-pic-desktop{
-  display: none;
-  margin-right: 40px;
-  /* display: block; */
-  margin: 0 auto;
-  align-items: flex-end;
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 50%;
+  /* margin-right: 70%; */
+  margin-left: 25px;
+  margin-top: 25px;
 }
 
 .about-flex-pic{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .about-text{
   color: white;
@@ -210,8 +199,7 @@ transform:matrix(1.10,0.11,-0.01,1.12,0,0);
   margin-bottom: 3pt;
 }
 .nav-bar{
-  /* background-color: rgb(17, 36, 73); */
-  /* background-color: #465c75; */
+
   background-color: rgb(29, 31, 44);
   color: rgb(253, 247, 238);
   display: flex;
@@ -221,13 +209,9 @@ transform:matrix(1.10,0.11,-0.01,1.12,0,0);
   /* height: 50px; */
   width: 100%;
   z-index: 99;
-  /* border-bottom: 1px solid rgba(80, 80, 80, 0.801); */
 }
 .footer{
-  /* background-color: rgb(51, 51, 51); */
-  /* background-color: #465c75; */
   background-color: rgb(29, 31, 44);
-  /* background-color: rgb(129, 128, 114); */
   color: rgb(253, 247, 238);
   display: flex;
   justify-content: space-between;
@@ -248,7 +232,7 @@ transform:matrix(1.10,0.11,-0.01,1.12,0,0);
   margin: 10px 10px;
 }
 .footer-list li a:hover{
-  color: rgb(217, 232, 236);
+  color: rgb(157, 170, 173);
 }
 .linkedin-f{
   margin-top: 9px;
@@ -260,7 +244,6 @@ transform:matrix(1.10,0.11,-0.01,1.12,0,0);
   padding: 5px;
   background-color: Transparent;
   color: white;
-  /* color: rgba(26, 25, 25, 0.877); */
 cursor:pointer;
 overflow: hidden;
 outline:none;
@@ -272,12 +255,6 @@ font-size: 0.9em;
   color: black;
 }
 #about{
-  /* background-color: #d4d7dd; */
-  /* background-color: rgb(29, 31, 44); */
-  /* background-color: rgb(59, 59, 59); */
-  /* border: 2px double rgba(32, 32, 32, 0.233);
-  border-radius: 4px;
-  box-shadow: 5px 2px 50px 2px rgb(34, 34, 34); */
   text-decoration: none;
   color: black;
   margin-top: 7%;
@@ -303,14 +280,13 @@ font-size: 1em;
   margin: 0;
 }
 .about-flex{
-  display: flex;
+  display: flex; 
   flex-direction: column;
   justify-content: space-between;
 }
 .my-text{
   margin-right: 5%;
   left: 0;
-  /* margin-left: 5%; */
   max-width: 50%;
   line-height: 15pt;
   margin-bottom: 3pt;
@@ -403,6 +379,12 @@ padding-left: 0;
   display: block;
 }
 @media screen and (max-width: 500px) {
+  .description{
+    padding-top: 0;
+  }
+  .description h2{
+    margin-top: 0;
+  }
   .slide-details{
     font-size: 14px;
     padding-bottom: 100px;
@@ -414,12 +396,6 @@ padding-left: 0;
   .features h2, .using h2, .devices h2{
     margin-top: 5px;
     /* max-width: 60%; */
-  }
-  .title{
-    /* margin: 90px auto; */
-    /* margin-top: 90px; */
-
-    /* text-align: center; */
   }
   #desktop-slide{
     display: none;
