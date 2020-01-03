@@ -14,11 +14,13 @@ export default class About extends Component {
         return (
             <div id="about">
                 <div className="about-text">
-
                 <div className="about-flex">
                 <div className="my-text">
-                <button className="button-about"><h1  >About</h1></button>
+                <div className="about-flex-pic">
+                <button className="button-about"><h1>About</h1></button>
                 <img className="my-pic" src="./images/IRONHACK_RETRATOS_GRUPOS0105.jpg"/>
+                </div>
+
                 <h4 className="name-text">Jonathan Vantu</h4>
                 <h4>Full Stack Developer</h4> 
                 <p>My programming knowledge so far is 
@@ -45,6 +47,7 @@ export default class About extends Component {
                 {
                 quote?
                 <div className="quote2">
+                <img className="my-pic-desktop" src="./images/IRONHACK_RETRATOS_GRUPOS0105.jpg"/>
                 <h4>"{quote.quote}" <p>-{quote.author}</p></h4>
                 <button className="button-quote" onClick={this.props.getqoute}>Get a new quote</button>
                 </div>

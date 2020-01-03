@@ -41,11 +41,11 @@
   }
 }
 body{
-  /* background-color: rgb(59, 59, 59); */
+  background-color: rgb(29, 31, 44);
   /* background-color: rgb(94, 92, 92); */
   /* background: rgb(43, 54, 66); */
   /* background: rgb(219, 188, 153); */
-  background-color: #eae9e9
+  /* background-color: #eae9e9 */
   /* background-color: rgb(42, 50, 58); */
 }
 
@@ -55,19 +55,17 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 70%;
+  width: 100%;
   margin: auto; 
-  margin-top: 9%;
-  background: rgb(70,92,117);
-  background: linear-gradient(180deg, rgba(70,92,117,1) 87%, rgba(39,41,45,0.9682247899159664) 100%);
-  /* background-color: #465c75; */
+  margin-top: 4%;
+  /* background: rgb(70,92,117);
+  background: linear-gradient(180deg, rgba(70,92,117,1) 87%, rgba(39,41,45,0.9682247899159664) 100%); */
+  background-color: rgb(29, 31, 44);
 
-  /* border: 2px solid rgba(32, 32, 32, 0.233); */
-  /* border: 5px double rgba(10, 38, 56, 0.685); */
-  border-radius: 20px;
-  box-shadow: 5px 5px 20px 5px rgb(34, 34, 34);
+  /* border-radius: 20px;
+  box-shadow: 5px 5px 20px 5px rgb(34, 34, 34); */
   text-decoration: none;
-  color: black;
+  color: rgb(255, 254, 254);
   height: 70%;
 }
   
@@ -140,18 +138,24 @@ margin-left: 190px;
 .title{
   /* font-size: 0.8em; */
   margin: 0 auto;
-  margin-top: 70px;
-  margin-left: 15%;
+  margin-left: 5%;
+  margin-top: 140px;
+  color: white;
+  /* margin-left: 15%; */
   /* text-align: center; */
 }
 .quote2{
   font-style: oblique;
-  color: rgba(105, 102, 102, 0.836);
+  color: white;
+  /* color: rgba(105, 102, 102, 0.836); */
   text-align: left;
-margin-top: 5%;
+/* margin-top: 5%; */
 max-width: 30%;
 right: 0;
 font-size: 0.9em;
+}
+.quote2 h4{
+  margin-top: 10%;
 }
 
 .nav-list{
@@ -171,16 +175,41 @@ margin: 0 10px;
   margin-left: 4%;
 }
 .my-pic{
-  display: inline;
+  /* display: inline; */
+  /* margin: 0 auto; */
+  /* margin-left: 90%; */
+  /* right: 0; */
+  display: none;
   width: 90px;
   height: 90px;
   object-fit: cover;
   object-position: top;
   border-radius: 50%;
-  float: left;
-  margin: 25px 40px 20px 10px;
+  /* float: right; */
+  /* margin-bottom: 10px; */
+  /* float: left;
+  margin: 25px 40px 20px 10px; */
+
+}
+.my-pic-desktop{
+  margin-right: 40px;
+  display: block;
+  /* float: right; */
+  margin: 0 auto;
+  align-items: flex-end;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+
+.about-flex-pic{
+  display: flex;
+  justify-content: space-between;
 }
 .about-text{
+  color: white;
   margin-top: 1%;
   margin-right: 5%;
   left: 0;
@@ -190,20 +219,22 @@ margin: 0 10px;
 }
 .nav-bar{
   /* background-color: rgb(17, 36, 73); */
-  background-color: #465c75;
+  /* background-color: #465c75; */
+  background-color: rgb(29, 31, 44);
   color: rgb(253, 247, 238);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   position: fixed;
   top: 0;
   /* height: 50px; */
   width: 100%;
   z-index: 99;
-  border-bottom: 1px solid rgba(80, 80, 80, 0.801);
+  /* border-bottom: 1px solid rgba(80, 80, 80, 0.801); */
 }
 .footer{
   /* background-color: rgb(51, 51, 51); */
-  background-color: #465c75;
+  /* background-color: #465c75; */
+  background-color: rgb(29, 31, 44);
   /* background-color: rgb(129, 128, 114); */
   color: rgb(253, 247, 238);
   display: flex;
@@ -233,7 +264,8 @@ margin: 0 10px;
   display: inline-block;
   padding: 5px;
   background-color: Transparent;
-  color: rgba(26, 25, 25, 0.877);
+  color: white;
+  /* color: rgba(26, 25, 25, 0.877); */
 cursor:pointer;
 overflow: hidden;
 outline:none;
@@ -245,11 +277,12 @@ font-size: 0.9em;
   color: black;
 }
 #about{
-  background-color: #d4d7dd;
+  /* background-color: #d4d7dd; */
+  /* background-color: rgb(29, 31, 44); */
   /* background-color: rgb(59, 59, 59); */
-  border: 2px double rgba(32, 32, 32, 0.233);
+  /* border: 2px double rgba(32, 32, 32, 0.233);
   border-radius: 4px;
-  box-shadow: 5px 2px 50px 2px rgb(34, 34, 34);
+  box-shadow: 5px 2px 50px 2px rgb(34, 34, 34); */
   text-decoration: none;
   color: black;
   margin-top: 7%;
@@ -257,14 +290,14 @@ font-size: 0.9em;
   min-height: 200px;
 }
 .button-about{
-  /* border: 0.5px solid rgb(77, 76, 76); */
+  display: block;
+  left: 0;
+  color: white;
   border-radius: 4px;
   display: inline-block;
   padding: 0;
   background-color: Transparent;
-/* background-repeat:no-repeat; */
 border: none;
-/* cursor:pointer; */
 overflow: hidden;
 outline:none;
 font-family: inherit;
@@ -304,7 +337,7 @@ flex-direction: column;
   text-align: left;
   align-items: flex-start;
   left: 0;
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin:0 10%;
 }
 .slide-details p{
@@ -370,6 +403,10 @@ padding-left: 0;
   display: block;
 }
 @media screen and (max-width: 500px) {
+  .slide-details{
+    font-size: 14px;
+    padding-bottom: 100px;
+  }
   .features, .using, .devices{
     margin: 0;
     max-width: 60%;
@@ -379,10 +416,10 @@ padding-left: 0;
     /* max-width: 60%; */
   }
   .title{
-    margin: 90px auto;
+    /* margin: 90px auto; */
     /* margin-top: 90px; */
 
-    text-align: center;
+    /* text-align: center; */
   }
   #desktop-slide{
     display: none;
@@ -395,13 +432,15 @@ padding-left: 0;
   }
   .nav-bar{
     z-index: 1;
+    justify-content: space-around;
+    font-size: 1.1em;
   }
   .app-button{
     display: inline-block;
     width: 40px;
   }
   .slide-container{
-    margin-top: 180px;
+    margin-top: 100px;
     margin-bottom: 180px;
     width: 90%;
   }
@@ -411,6 +450,8 @@ padding-left: 0;
     margin-bottom: 0;
   }
   .links{
+    left: 0;
+    margin-left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -418,7 +459,7 @@ padding-left: 0;
     margin-bottom: 10%;
   }
   .links div{
-    margin: 5% 6%;
+    margin: 5% 0;
     
   }
   .each-slide > div{
@@ -471,5 +512,17 @@ padding: 5px;
   }
   .description{
     margin-top: 30px;
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+  }
+  .footer{
+font-size: 1.1em;
+  }
+  .my-pic-desktop{
+    display: none;
+  }
+  .my-pic{
+    display: block;
   }
 }

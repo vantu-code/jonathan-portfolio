@@ -30,7 +30,7 @@ export default class App extends Component {
       <div className="all-page">
       <NavBar/>
       <div className="title" id="projects">
-       {/* <h1>Projects</h1> */}
+       <h1>Projects</h1>
        </div>
       <Projects />
       <div className="hero"></div>
