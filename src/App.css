@@ -42,11 +42,6 @@
 }
 body{
   background-color: rgb(29, 31, 44);
-  /* background-color: rgb(94, 92, 92); */
-  /* background: rgb(43, 54, 66); */
-  /* background: rgb(219, 188, 153); */
-  /* background-color: #eae9e9 */
-  /* background-color: rgb(42, 50, 58); */
 }
 
 .slide-container {
@@ -55,24 +50,18 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 100%;
+  width: 80%;
   margin: auto; 
   margin-top: 4%;
-  /* background: rgb(70,92,117);
-  background: linear-gradient(180deg, rgba(70,92,117,1) 87%, rgba(39,41,45,0.9682247899159664) 100%); */
   background-color: rgb(29, 31, 44);
-
-  /* border-radius: 20px;
-  box-shadow: 5px 5px 20px 5px rgb(34, 34, 34); */
   text-decoration: none;
   color: rgb(255, 254, 254);
   height: 70%;
 }
   
 h3 {
-  text-align: center; }
-
-
+  text-align: center; 
+}
 .each-slide > div {
   display: flex;
   align-items: center;
@@ -126,7 +115,6 @@ padding: 5px;
 .image-slide{
   max-width:100%;
   max-height:100%;
-  /* width: 40%; */
 }
 .quote{
 text-align: left;
@@ -136,21 +124,16 @@ left: 0;
 margin-left: 190px;
 }
 .title{
-  /* font-size: 0.8em; */
   margin: 0 auto;
   margin-left: 5%;
   margin-top: 140px;
   color: white;
-  /* margin-left: 15%; */
-  /* text-align: center; */
 }
 .quote2{
   font-style: oblique;
   color: white;
-  /* color: rgba(105, 102, 102, 0.836); */
   text-align: left;
-/* margin-top: 5%; */
-max-width: 30%;
+width: 30%;
 right: 0;
 font-size: 0.9em;
 }
@@ -175,26 +158,16 @@ margin: 0 10px;
   margin-left: 4%;
 }
 .my-pic{
-  /* display: inline; */
-  /* margin: 0 auto; */
-  /* margin-left: 90%; */
-  /* right: 0; */
   display: none;
   width: 90px;
   height: 90px;
   object-fit: cover;
   object-position: top;
   border-radius: 50%;
-  /* float: right; */
-  /* margin-bottom: 10px; */
-  /* float: left;
-  margin: 25px 40px 20px 10px; */
-
 }
 .my-pic-desktop{
   margin-right: 40px;
   display: block;
-  /* float: right; */
   margin: 0 auto;
   align-items: flex-end;
   width: 90px;
@@ -489,7 +462,7 @@ padding-left: 0;
   .quote2{
     text-align: left;
     margin-top: 5%;
-    max-width: 100%;
+    width: 100%;
     right: 0;
   }
   .my-slide{
