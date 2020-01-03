@@ -16,13 +16,15 @@ export default class About extends Component {
                 <div className="about-text">
                 <div className="about-flex">
                 <div className="my-text">
-                <div className="about-flex-pic">
                 <button className="button-about"><h1>About</h1></button>
+                <div className="about-flex-pic">
+                <div>
+                <h4 className="name-text">Jonathan Vantu</h4>
+                <h4>Full Stack Developer</h4> 
+                </div>
                 <img className="my-pic" src="./images/IRONHACK_RETRATOS_GRUPOS0105.jpg"/>
                 </div>
 
-                <h4 className="name-text">Jonathan Vantu</h4>
-                <h4>Full Stack Developer</h4> 
                 <p>My programming knowledge so far is 
                 <span style={{fontWeight:"bold"}}> Javascript, ES6, MongoDB, Express, React, Node-js, HTML & CSS. </span>
                 I am fascinated by inovations, creativity and combining both. 

@@ -51,14 +51,16 @@ body{
   flex-direction: column;
   justify-content: space-around;
   width: 80%;
+  /* height: 100%; */
   margin: auto; 
-  margin-top: 4%;
+  /* margin-top: 4%; */
   background-color: rgb(29, 31, 44);
   text-decoration: none;
   color: rgb(255, 254, 254);
-  height: 70%;
+  padding-bottom: 100px;
+  /* height: 70%; */
 }
-  
+
 h3 {
   text-align: center; 
 }
@@ -68,15 +70,15 @@ h3 {
   justify-content: center;
   background-size: cover;
   height: 450px;
-  
+  /* height: 120%; */
 }
 .each-slide a {
   margin-top: 50px;
-text-decoration: none;
-color: rgb(151, 162, 168);
-border: 0.5px solid rgba(124, 124, 124, 0.637);
-border-radius: 4px;
-padding: 5px;
+  text-decoration: none;
+  color: rgb(151, 162, 168);
+  border: 0.5px solid rgba(124, 124, 124, 0.637);
+  border-radius: 4px;
+  padding: 5px;
 }
 .each-slide a:hover{
   background-color: rgb(151, 162, 168);
@@ -87,7 +89,6 @@ padding: 5px;
   font-size: 20px;
   background: #efefef;
   text-align: center;
-  
 }
 
 .each-fade {
@@ -113,12 +114,16 @@ padding: 5px;
   background: #adceed;
 }
 .image-slide{
-  max-width:100%;
-  max-height:100%;
+  /* width: 80%; */
+  /* height: 100%; */
+  max-width: 90%;
+  max-height: 90%;
+  /* margin: 10%; */
+
 }
 .quote{
-text-align: left;
-margin-top: 5%;
+  text-align: left;
+  margin-top: 5%;
 max-width: 40%;
 left: 0;
 margin-left: 190px;
@@ -126,8 +131,11 @@ margin-left: 190px;
 .title{
   margin: 0 auto;
   margin-left: 5%;
-  margin-top: 140px;
+  margin-top: 120px;
   color: white;
+}
+.title h1{
+margin-bottom: 0;
 }
 .quote2{
   font-style: oblique;
@@ -148,17 +156,27 @@ font-size: 0.9em;
   margin-right: 4%;
 }
 .nav-list li{
-margin: 0 10px;
+margin: 0 14px;
+}
+.nav-list li:hover{
+
+transform:matrix(1.10,0.11,-0.01,1.12,0,0);
+-ms-transform:matrix(1.10,0.11,-0.01,1.12,0,0);
+-webkit-transform:matrix(1.10,0.11,-0.01,1.12,0,0);
 }
 .nav-list li a{
   text-decoration: none;
   color: rgb(253, 247, 238);
+  margin: 0 14px;
+}
+.nav-list li a:hover{
+  color: rgb(217, 232, 236);
 }
 .name{
   margin-left: 4%;
 }
 .my-pic{
-  display: none;
+  /* display: none; */
   width: 90px;
   height: 90px;
   object-fit: cover;
@@ -166,8 +184,9 @@ margin: 0 10px;
   border-radius: 50%;
 }
 .my-pic-desktop{
+  display: none;
   margin-right: 40px;
-  display: block;
+  /* display: block; */
   margin: 0 auto;
   align-items: flex-end;
   width: 90px;
@@ -228,6 +247,9 @@ margin: 0 10px;
   color: rgb(253, 247, 238);
   margin: 10px 10px;
 }
+.footer-list li a:hover{
+  color: rgb(217, 232, 236);
+}
 .linkedin-f{
   margin-top: 9px;
 }
@@ -282,7 +304,7 @@ font-size: 1em;
 }
 .about-flex{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 .my-text{
@@ -312,6 +334,8 @@ flex-direction: column;
   left: 0;
   font-size: 0.9em;
   margin:0 10%;
+  padding-top: 0;
+  padding-bottom: 150px;
 }
 .slide-details p{
 text-align: left;
@@ -342,6 +366,8 @@ padding-left: 0;
 .description{
   color: rgb(151, 162, 168);
   width: 100%;
+  padding-top: 150px;
+  margin-top: 0;
   text-align: left;
   left: 0;
 }
@@ -353,6 +379,7 @@ padding-left: 0;
   display: block;
   height: 450px; 
   margin-bottom: 0;
+  padding-bottom: 150px;
 }
 .app-button{
   border: 1px solid rgba(69, 97, 138, 0.678);
