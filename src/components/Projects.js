@@ -2,19 +2,8 @@ import React, { Component, createRef } from 'react'
 import { Slide } from 'react-slideshow-image';
 import projects from '../projects.json'
 import ProjectDetails from './ProjectDetails'
+import ProjectSlide from './ProjectSlide'
 
-
-
-const properties = {
-duration: 10000,
-//   transitionDuration: 1000,
-infinite: true,
-indicators: true,
-arrows: true,
-onChange: (oldIndex, newIndex) => {
-    // console.log(`slide transition from ${oldIndex} to ${newIndex}`);
-}
-}
 
 export default class Slideshow extends Component {
     state={
@@ -59,58 +48,41 @@ render()
     <div className="slide-container" id="projects">
         <Slide {...this.properties}>
 
-            <div id={`${this.state.idForSlide}`} className="each-slide"  onMouseEnter={this.show1} onMouseLeave={this.dontShow} >
-                {
+        <div id={`${this.state.idForSlide}`} 
+            className="each-slide" 
+            onMouseEnter={this.show1} 
+            onMouseLeave={this.dontShow} >
+            {
                 this.state.show !== 1?
-
-                <div className="my-slide">
-                    {/* desktop */}
-                    <h2 id="desktop-slide">{projects[0].title}</h2>
-                    <img id="desktop-slide" className="image-slide" src={projects[0].photo} onClick={this.show1}/>
-                    {/* mobile */}
-                    <h2 id="mobile-slide" >{projects[0].title}</h2>
-                    <img id="mobile-slide" className="image-slide" src={projects[0].photo} onClick={this.show1}/>
-                    <h4 id="mobile-slide" onClick={this.show1} > More details</h4>
-                </div>
+                <ProjectSlide project={projects[0]} show={this.show1} />
                 :
                 <ProjectDetails project={projects[0]} dontShow={this.dontShow}/>
-                }
-            </div>
-            <div id={`${this.state.idForSlide}`} className="each-slide"  onMouseEnter={this.show2} onMouseLeave={this.dontShow} >
-                {
-                this.state.show !== 2?
+            }
+        </div>
 
-                <div className="my-slide">
-                    {/* desktop */}
-                    <h2 id="desktop-slide">{projects[1].title}</h2>
-                    <img id="desktop-slide" className="image-slide" src={projects[1].photo} onClick={this.show2}/>
-                    {/* mobile */}
-                    <h2 id="mobile-slide" >{projects[1].title}</h2>
-                    <img id="mobile-slide" className="image-slide" src={projects[1].photo} onClick={this.show2}/>
-                    <h4 id="mobile-slide" onClick={this.show2}  > More details</h4>
-                </div>
+        <div id={`${this.state.idForSlide}`} 
+            className="each-slide" 
+            onMouseEnter={this.show2} 
+            onMouseLeave={this.dontShow} >
+            {
+                this.state.show !== 2?
+                <ProjectSlide project={projects[1]} show={this.show2} />
                 :
                 <ProjectDetails project={projects[1]} dontShow={this.dontShow}/>
-                }
-            </div>
+            }
+        </div>
 
-            <div id={`${this.state.idForSlide}`} className="each-slide" onMouseEnter={this.show3} onMouseLeave={this.dontShow} >
-                {
+        <div id={`${this.state.idForSlide}`} 
+            className="each-slide" 
+            onMouseEnter={this.show3} 
+            onMouseLeave={this.dontShow} >
+            {
                 this.state.show !== 3?
-
-                <div className="my-slide">
-                    {/* desktop */}
-                    <h2 id="desktop-slide">{projects[2].title}</h2>
-                    <img id="desktop-slide" className="image-slide" src={projects[2].photo} onClick={this.show3}/>
-                    {/* mobile */}
-                    <h2 id="mobile-slide" >{projects[2].title}</h2>
-                    <img id="mobile-slide" className="image-slide" src={projects[2].photo} onClick={this.show3}/>
-                    <h4 id="mobile-slide" onClick={this.show3}  > More details</h4>
-                </div>
+                <ProjectSlide project={projects[2]} show={this.show3} />
                 :
                 <ProjectDetails project={projects[2]} dontShow={this.dontShow}/>
-                }
-            </div>
+            } 
+        </div>
 
         </Slide>
     </div>
