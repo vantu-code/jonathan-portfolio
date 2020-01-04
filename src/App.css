@@ -311,6 +311,8 @@ flex-direction: column;
   margin:0 10%;
   padding-top: 0;
   padding-bottom: 150px;
+  transition: all;
+  transition-duration: 4s;
 }
 .slide-details p{
 text-align: left;

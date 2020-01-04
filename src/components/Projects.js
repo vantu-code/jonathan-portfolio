@@ -76,7 +76,7 @@ render()
                 <ProjectDetails project={projects[0]} dontShow={this.dontShow}/>
                 }
             </div>
-            <div id={`${this.state.idForSlide}`} className="each-slide"  onMouseEnter={this.show} onMouseLeave={this.dontShow} >
+            <div id={`${this.state.idForSlide}`} className="each-slide"  onMouseEnter={this.show2} onMouseLeave={this.dontShow} >
                 {
                 this.state.show !== 2?
 
