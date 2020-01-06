@@ -7,7 +7,7 @@ export default class ProjectDetails extends Component {
         // console.log(project)
         return (
             project?
-            <div className="slide-details">
+            <div className="slide-details" onMouseLeave={this.props.dontShow}>
                 <div className="description" onClick={this.props.dontShow}>
                     <h2 className="title-d" style={{textAlign:"left"}}>{project.title}</h2>
                     <h3>{project.description} </h3>

@@ -5,11 +5,23 @@ export default function ProjectSlide(props) {
         <div className="my-slide">
             {/* desktop */}
             <h2 id="desktop-slide">{props.project.title}</h2>
-            <img id="desktop-slide" className="image-slide" src={props.project.photo} alt="app" onClick={props.show}/>
+            <img id="desktop-slide" 
+                className="image-slide" 
+                src={props.project.photo} alt="app" onClick={props.show}
+                name={props.passId}
+                onMouseEnter={props.show}
+            />
             {/* mobile */}
             <h2 id="mobile-slide" >{props.project.title}</h2>
-            <img id="mobile-slide" className="image-slide" src={props.project.photo} alt="app" onClick={props.show}/>
-            <h4 id="mobile-slide" onClick={props.show} > More details</h4>
-        </div>
+            <img name={props.passId} 
+                id="mobile-slide" 
+                className="image-slide" 
+                src={props.project.photo} alt="app" 
+                onClick={props.show}/>
+            <button id="mobile-slide" 
+                name={props.passId}
+                onClick={props.show} > More details
+            </button>
+    </div>
     )
 }

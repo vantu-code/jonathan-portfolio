@@ -25,17 +25,15 @@ export default class App extends Component {
 
   render() {
     const quote = quotes[this.state.quoteNumber]
-    // console.log(this.state.quoteNumber)
     return (
       <div className="all-page">
-      <NavBar/>
-      <div className="title" id="projects">
-       <h1>Projects</h1>
-       </div>
-      <Projects />
-      <div className="hero"></div>
-      <About getqoute={this.getqoute} quote={quote}/>
-      <Footer quote={quote}/>
+        <NavBar/>
+        <div className="title" id="projects">
+          <h1>Projects</h1>
+        </div>
+        <Projects />
+        <About getqoute={this.getqoute} quote={quote}/>
+        <Footer quote={quote}/>
       </div>
     )
   }

@@ -39,27 +39,23 @@
     transform: rotate(360deg);
   }
 }
+
+
 body{
   background-color: rgb(29, 31, 44);
 }
-
 .slide-container {
-  
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 80%;
-  /* height: 100%; */
   margin: auto; 
-  /* margin-top: 4%; */
   background-color: rgb(29, 31, 44);
   text-decoration: none;
   color: rgb(255, 254, 254);
   padding-bottom: 100px;
-  /* height: 70%; */
 }
-
 h3 {
   text-align: center; 
 }
@@ -69,7 +65,6 @@ h3 {
   justify-content: center;
   background-size: cover;
   height: 450px;
-  /* height: 120%; */
 }
 .each-slide a {
   margin-top: 50px;
@@ -89,21 +84,16 @@ h3 {
   background: #efefef;
   text-align: center;
 }
-
 .each-fade {
-  
   display: flex;
 }
-
 .each-fade .image-container {
   width: 75%;
   overflow: hidden;
 }
-
 .each-fade .image-container img {
   width: 100%;
 }
-
 .each-fade h2 {
   width: 25%;
   display: flex;
@@ -112,20 +102,16 @@ h3 {
   margin: 0;
   background: #adceed;
 }
-.image-slide{
-  /* width: 80%; */
-  /* height: 100%; */
+.image-slide{     
   max-width: 90%;
   max-height: 90%;
-  /* margin: 10%; */
-
 }
 .quote{
   text-align: left;
   margin-top: 5%;
-max-width: 40%;
-left: 0;
-margin-left: 190px;
+  max-width: 40%;
+  left: 0;
+  margin-left: 190px;
 }
 .title{
   margin: 0 auto;
@@ -134,15 +120,15 @@ margin-left: 190px;
   color: white;
 }
 .title h1{
-margin-bottom: 0;
+  margin-bottom: 0;
 }
 .quote2{
   font-style: oblique;
   color: white;
   text-align: left;
-width: 30%;
-right: 0;
-font-size: 0.9em;
+  width: 30%;
+  right: 0;
+  font-size: 0.9em;
 }
 .quote2 h4{
   margin-top: 10%;
@@ -155,11 +141,11 @@ font-size: 0.9em;
   margin-right: 4%;
 }
 .nav-list li{
-margin: 0 14px;
+  margin: 0 14px;
 }
 .nav-list li:hover{
 
-transform: scale(1.2)
+  transform: scale(1.2)
 }
 .nav-list li a{
   text-decoration: none;
@@ -173,13 +159,11 @@ transform: scale(1.2)
   margin-left: 4%;
 }
 .my-pic{
-  /* display: none; */
   width: 50px;
   height: 50px;
   object-fit: cover;
   object-position: top;
   border-radius: 50%;
-  /* margin-right: 70%; */
   margin-left: 25px;
   margin-top: 25px;
 }
@@ -205,7 +189,6 @@ transform: scale(1.2)
   justify-content: space-around;
   position: fixed;
   top: 0;
-  /* height: 50px; */
   width: 100%;
   z-index: 99;
 }
@@ -243,11 +226,11 @@ transform: scale(1.2)
   padding: 5px;
   background-color: Transparent;
   color: white;
-cursor:pointer;
-overflow: hidden;
-outline:none;
-font-family: inherit;
-font-size: 0.9em;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  font-family: inherit;
+  font-size: 0.9em;
 }
 .button-quote:hover{
   background-color: rgba(37, 37, 37, 0.329);
@@ -268,11 +251,11 @@ font-size: 0.9em;
   display: inline-block;
   padding: 0;
   background-color: Transparent;
-border: none;
-overflow: hidden;
-outline:none;
-font-family: inherit;
-font-size: 1em;
+  border: none;
+  overflow: hidden;
+  outline:none;
+  font-family: inherit;
+  font-size: 1em;
 }
 .button-about h1{
   padding: 0;
@@ -322,8 +305,8 @@ text-align: left;
   justify-content: space-between;
 }
 .horizontal-flex ul{
-margin-left: 0;
-padding-left: 0;
+  margin-left: 0;
+  padding-left: 0;
 }
 .links{
   display: flex;
@@ -383,20 +366,16 @@ padding-left: 0;
 @media screen and (max-width: 500px) {
   .description{
     padding-top: 0;
- 
   }
   .description h2{
     margin-top: 0;
-    
   }
   #short{
     padding-bottom: 0;
-    
   }
   .slide-details{
     font-size: 14px;
     padding-bottom: 100px;
-    
   }
   .features, .using, .devices{
     margin: 0;
@@ -482,15 +461,18 @@ padding-left: 0;
   .my-slide h2{
   margin-top: 15px;
   }
-  .my-slide h4{
+  .my-slide button{
+    font-size: 14px;
+    margin: 10px;
+    background-color: transparent;
     display: inline-block;
-  text-decoration: none;
-color: rgb(151, 162, 168);
-border: 0.5px solid rgba(124, 124, 124, 0.637);
-border-radius: 4px;
-padding: 5px;
+    text-decoration: none;
+    color: rgb(151, 162, 168);
+    border: 0.5px solid rgba(124, 124, 124, 0.637);
+    border-radius: 4px;
+    padding: 5px;
   }
-  .my-slide h4:hover{
+  .my-slide button:hover{
     background-color: rgb(151, 162, 168);
     color: black;
   }
@@ -501,7 +483,7 @@ padding: 5px;
     color: white;
   }
   .footer{
-font-size: 1.1em;
+    font-size: 1.1em;
   }
   .my-pic{
     display: block;

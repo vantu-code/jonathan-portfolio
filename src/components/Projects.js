@@ -10,26 +10,15 @@ export default class Slideshow extends Component {
         show: null,
         idForSlide: "short",
     }
-    show1=(e)=>{
-        if (e.type === "mouseenter" && e.target.id === "mobile-slide") return;
-            else this.setState({show: 1, idForSlide:""})
+
+    show=(e)=>{
+        console.log(e.target.name);
+        
+        const slideNum = parseInt(e.target.name);
+        this.setState({show: slideNum, idForSlide:""})
     }
-    show2=(e)=>{
-        if (e.type === "mouseenter" && e.target.id === "mobile-slide") return;
-            else this.setState({show: 2, idForSlide:""})
-    }
-    show3=(e)=>{
-        if (e.type === "mouseenter" && e.target.id === "mobile-slide") return;
-            else this.setState({show: 3, idForSlide:""})
-    }
-    dontShow=(e)=>{
-        if (e.type === "mouseenter" && e.target.id === "mobile-slide"){
-            return;
-            }
-            else{
-        this.setState({show: null})
-        this.setState({idForSlide:"short"})
-                }
+    dontShow=()=>{
+        this.setState({show: null, idForSlide:"short"})
     }
     properties = {
         duration: 1000000,
@@ -47,43 +36,19 @@ render()
     return (
     <div className="slide-container" id="projects">
         <Slide {...this.properties}>
-
-        <div id={`${this.state.idForSlide}`} 
-            className="each-slide" 
-            onMouseEnter={this.show1} 
-            onMouseLeave={this.dontShow} >
+{
+        projects.map((project, i)=>{
+        return <div key={i} id={`${this.state.idForSlide}`} 
+            className="each-slide" >
             {
-                this.state.show !== 1?
-                <ProjectSlide project={projects[0]} show={this.show1} />
+                this.state.show !== i?
+                <ProjectSlide project={project} show={this.show} passId={i}/>
                 :
-                <ProjectDetails project={projects[0]} dontShow={this.dontShow}/>
+                <ProjectDetails project={project} dontShow={this.dontShow}/>
             }
         </div>
-
-        <div id={`${this.state.idForSlide}`} 
-            className="each-slide" 
-            onMouseEnter={this.show2} 
-            onMouseLeave={this.dontShow} >
-            {
-                this.state.show !== 2?
-                <ProjectSlide project={projects[1]} show={this.show2} />
-                :
-                <ProjectDetails project={projects[1]} dontShow={this.dontShow}/>
-            }
-        </div>
-
-        <div id={`${this.state.idForSlide}`} 
-            className="each-slide" 
-            onMouseEnter={this.show3} 
-            onMouseLeave={this.dontShow} >
-            {
-                this.state.show !== 3?
-                <ProjectSlide project={projects[2]} show={this.show3} />
-                :
-                <ProjectDetails project={projects[2]} dontShow={this.dontShow}/>
-            } 
-        </div>
-
+        })
+}
         </Slide>
     </div>
     )
