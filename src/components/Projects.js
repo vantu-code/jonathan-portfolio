@@ -12,8 +12,6 @@ export default class Slideshow extends Component {
     }
 
     show=(e)=>{
-        console.log(e.target.name);
-        
         const slideNum = parseInt(e.target.name);
         this.setState({show: slideNum, idForSlide:""})
     }

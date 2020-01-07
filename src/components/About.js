@@ -43,9 +43,9 @@ export default class About extends Component {
                         {
                         quote?
                         <div className="quote2">
-                            <h4>"{quote.quote}" <p>-{quote.author}</p></h4>
-                            <button className="button-quote" onClick={this.props.getqoute}>Get a new quote</button>
-                        </div>
+                                <h4>"{quote.quote}" <p>-{quote.author}</p></h4>
+                                <button className="button-quote" onClick={this.props.getqoute}>Get a new quote</button>
+                            </div>
                         :null
                         }
                     </div>

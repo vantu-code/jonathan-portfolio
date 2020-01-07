@@ -1,6 +1,8 @@
 import React from 'react'
 
+
 export default function ProjectSlide(props) {
+    
     return (
         <div className="my-slide">
             {/* desktop */}

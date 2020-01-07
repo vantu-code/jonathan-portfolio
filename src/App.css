@@ -79,10 +79,10 @@ h3 {
   color: black;
 }
 .each-slide span {
-  padding: 20px;
-  font-size: 20px;
-  background: #efefef;
-  text-align: center;
+  /* padding: 20px;
+  font-size: 20px; */
+  /* background: #efefef; */
+  /* text-align: center; */
 }
 .each-fade {
   display: flex;
@@ -488,4 +488,55 @@ text-align: left;
   .my-pic{
     display: block;
   }
+}
+
+
+
+.fade-appear {
+  opacity: 0.01;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: all 0.8s ease-in;
+}
+
+.nav-appear {
+  opacity: 0.01;
+}
+
+.nav-appear.nav-appear-active {
+  opacity: 1;
+  transition: all 1s ease-in;
+}
+
+
+
+.description-appear {
+  opacity: 0.01;
+}
+
+.description-appear.description-appear-active {
+  opacity: 1;
+  transition: all 0.3s ease-in;
+}
+
+.flex-appear {
+  opacity: 0.01;
+}
+
+.flex-appear.flex-appear-active {
+  opacity: 1;
+  transition: all 0.6s ease-in;
+}
+
+.links-appear {
+  opacity: 0.01;
+  transform: scale(0.95);
+  color: transparent;
+}
+
+.links-appear.links-appear-active {
+  opacity: 1;
+  transition: all 1s ease-in;
 }
